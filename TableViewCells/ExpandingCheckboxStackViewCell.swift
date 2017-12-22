@@ -12,13 +12,13 @@ class ExpandingCheckboxStackViewCell: UITableViewCell {
 
     public static let reuseIdentifier = "ExpandingCheckboxStackViewCell"
     @IBOutlet weak var acceptButton: UIButton!
-    @IBOutlet weak var stackView: UIStackView!
+//    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var nameLabel1: UILabel!
     @IBOutlet weak var nameLabel2: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
 
-    @IBOutlet weak var secondStackView: UIStackView!
-    @IBOutlet weak var nameLabel2StackViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var expandableStackView: UIStackView!
+    @IBOutlet weak var expandableStackViewHeightConstraint: NSLayoutConstraint!
 
     weak var tableView: UITableView?
     var isExpanded = true
@@ -36,7 +36,7 @@ class ExpandingCheckboxStackViewCell: UITableViewCell {
     @IBAction func acceptButtonPressed(_ sender: Any) {
         isExpanded = !isExpanded
         if isExpanded {
-            self.secondStackView.isHidden = false
+            self.expandableStackView.isHidden = false
         }
 
 //        if !isExpanded {
@@ -46,13 +46,13 @@ class ExpandingCheckboxStackViewCell: UITableViewCell {
 
         UIView.animate(withDuration: 0.3, delay: 0.0, options: [.allowUserInteraction, .beginFromCurrentState], animations: {
             self.tableView?.beginUpdates()
-            self.nameLabel2StackViewHeightConstraint.constant = self.isExpanded ? 150 : 0
+            self.expandableStackViewHeightConstraint.constant = self.isExpanded ? 150 : 0
             self.layoutIfNeeded()
 //            self.secondStackView.isHidden = !self.isExpanded
             self.tableView?.endUpdates()
         }, completion: { completed in
             if !self.isExpanded {
-                self.secondStackView.isHidden = !self.isExpanded
+                self.expandableStackView.isHidden = !self.isExpanded
             }
         })
 

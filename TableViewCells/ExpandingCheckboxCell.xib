@@ -95,7 +95,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="acceptButton" destination="DW4-D3-OTm" id="ob3-yx-lHX"/>
+                <outlet property="acceptButton" destination="DW4-D3-OTm" id="1b4-Sl-yae"/>
                 <outlet property="contractedHeightConstraint" destination="4QX-7j-jYN" id="O8B-8b-dDN"/>
                 <outlet property="expandableView" destination="TwT-vr-myP" id="QsY-F1-uXd"/>
                 <outlet property="nameLabel1" destination="Wns-9o-tS2" id="UWv-RG-a10"/>
