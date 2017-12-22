@@ -43,7 +43,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lop-ii-cLm" userLabel="Expandable stack view">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lop-ii-cLm" userLabel="Expandable stack view">
                                 <rect key="frame" x="0.0" y="274.5" width="0.0" height="0.0"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZz-YM-Yxk" userLabel="Name Label 2">
@@ -53,6 +53,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YC-dq-KV4">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="999" id="CSX-FD-0l2"/>
@@ -78,6 +83,7 @@
                 <outlet property="expandableStackViewHeightConstraint" destination="CSX-FD-0l2" id="Uej-TM-6Sj"/>
                 <outlet property="nameLabel1" destination="7CF-Jz-1UB" id="G7c-rR-Zo0"/>
                 <outlet property="nameLabel2" destination="IZz-YM-Yxk" id="Qkw-kd-tLL"/>
+                <outlet property="nameTextField" destination="7YC-dq-KV4" id="5hH-5P-N6x"/>
             </connections>
             <point key="canvasLocation" x="92" y="290.5"/>
         </tableViewCell>

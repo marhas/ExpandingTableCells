@@ -23,7 +23,6 @@ class MyTableViewController: UITableViewController {
         if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: ExpandingCheckboxCell.reuseIdentifier, for: indexPath) as! ExpandingCheckboxCell
             cell.acceptButton.setTitle("Accept \(indexPath.row)", for: .normal)
-//            cell.tableView = tableView
             cell.indexPath = indexPath
             cell.selfSizingCellDelegate = self
             return cell
@@ -46,9 +45,7 @@ class MyTableViewController: UITableViewController {
 
 extension MyTableViewController: SelfSizingCellDelegate {
     func cellNeedsResize(at indexPath: IndexPath) {
-//        tableView.reloadRows(at: [indexPath], with: .none)
         tableView.beginUpdates()
         tableView.endUpdates()
     }
 }
-

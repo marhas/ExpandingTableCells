@@ -12,6 +12,10 @@ protocol SelfSizingCellDelegate: class {
     func cellNeedsResize(at indexPath: IndexPath)
 }
 
+/*****
+ * This is not working but I left it here as a reference and code to continue experiment on.
+ * Ths implementation using UIStackViews (ExpandingCheckboxStackViewCell) works well so I'm abandoning this approach for now
+ **/
 class ExpandingCheckboxCell: UITableViewCell {
 
     public static let reuseIdentifier = "ExpandingCheckboxCell"
@@ -24,7 +28,7 @@ class ExpandingCheckboxCell: UITableViewCell {
     public weak var selfSizingCellDelegate: SelfSizingCellDelegate?
     public var indexPath: IndexPath?
     private var contractionConstraint: NSLayoutConstraint!
-//    weak var tableView: UITableView?
+
     var isContracted = true {
         didSet {
             animateSizeChange(isContracted: isContracted)
