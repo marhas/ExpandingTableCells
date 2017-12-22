@@ -20,7 +20,7 @@ class MyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: ExpandingCheckboxCell.reuseIdentifier, for: indexPath) as! ExpandingCheckboxCell
             cell.acceptButton.setTitle("Accept \(indexPath.row)", for: .normal)
 //            cell.tableView = tableView

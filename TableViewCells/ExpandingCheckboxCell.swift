@@ -23,6 +23,7 @@ class ExpandingCheckboxCell: UITableViewCell {
     @IBOutlet weak var expandableView: UIView!
     public weak var selfSizingCellDelegate: SelfSizingCellDelegate?
     public var indexPath: IndexPath?
+    private var contractionConstraint: NSLayoutConstraint!
 //    weak var tableView: UITableView?
     var isContracted = true {
         didSet {
@@ -32,11 +33,20 @@ class ExpandingCheckboxCell: UITableViewCell {
 
     init() {
         super.init(style: .default, reuseIdentifier: ExpandingCheckboxCell.reuseIdentifier)
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setup()
+    }
+
+    private func setup() {
         selectionStyle = .none
+    }
+
+    override func didMoveToSuperview() {
+        contractionConstraint = expandableView.bottomAnchor.constraint(equalTo: nameLabel1.bottomAnchor)
     }
 
     override func prepareForReuse() {
@@ -48,12 +58,14 @@ class ExpandingCheckboxCell: UITableViewCell {
         guard let indexPath = indexPath else { return }
 
         if isContracted {
-            contractedHeightConstraint.constant = expandableView.bounds.height
-            self.contractedHeightConstraint.isActive = true
-            layoutIfNeeded()
-            contractedHeightConstraint.constant = 0
+//            contractedHeightConstraint.constant = expandableView.bounds.height
+//            self.contractedHeightConstraint.isActive = true
+//            layoutIfNeeded()
+//            contractedHeightConstraint.constant = 0
+            contractionConstraint.isActive = true
         } else {
-            self.contractedHeightConstraint.isActive = false
+            contractionConstraint.isActive = false
+//            self.contractedHeightConstraint.isActive = false
         }
 
 

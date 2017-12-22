@@ -37,17 +37,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="TwT-vr-myP" userLabel="Expandable view">
-                            <rect key="frame" x="10" y="357" width="242" height="0.0"/>
+                            <rect key="frame" x="10" y="182.5" width="242" height="174.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="700" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-m6-Hgj" userLabel="Name Label 2">
-                                    <rect key="frame" x="10" y="10" width="222" height="0.0"/>
+                                    <rect key="frame" x="10" y="10" width="222" height="114.5"/>
                                     <string key="text">Maecenas faucibus, turpis quis volutpat placerat, tortor sapien blandit leo, et facilisis nisl arcu non sem. Proin vehicula, erat cursus dignissim pulvinar, eros dui iaculis nunc, a mattis augue metus ultrices risus. Phasellus malesuada pharetra laoreet.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="800" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRy-EO-axv">
-                                    <rect key="frame" x="10" y="30" width="222" height="0.0"/>
+                                    <rect key="frame" x="10" y="144.5" width="222" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -64,6 +64,11 @@
                                 <constraint firstAttribute="bottom" secondItem="GRy-EO-axv" secondAttribute="bottom" priority="900" id="ge6-1U-CLT"/>
                                 <constraint firstItem="GRy-EO-axv" firstAttribute="leading" secondItem="Unn-m6-Hgj" secondAttribute="leading" id="jcc-Le-K7W"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="4QX-7j-jYN"/>
+                                </mask>
+                            </variation>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
