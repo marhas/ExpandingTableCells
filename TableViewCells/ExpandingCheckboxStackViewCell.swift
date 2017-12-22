@@ -21,7 +21,7 @@ class ExpandingCheckboxStackViewCell: UITableViewCell {
     @IBOutlet weak var expandableStackViewHeightConstraint: NSLayoutConstraint!
 
     weak var tableView: UITableView?
-    var isExpanded = true
+    var isExpanded = false
 
     init() {
         super.init(style: .default, reuseIdentifier: ExpandingCheckboxStackViewCell.reuseIdentifier)
@@ -46,7 +46,7 @@ class ExpandingCheckboxStackViewCell: UITableViewCell {
 
         UIView.animate(withDuration: 0.3, delay: 0.0, options: [.allowUserInteraction, .beginFromCurrentState], animations: {
             self.tableView?.beginUpdates()
-            self.expandableStackViewHeightConstraint.constant = self.isExpanded ? 150 : 0
+            self.expandableStackViewHeightConstraint.constant = self.isExpanded ? self.nameLabel2.intrinsicContentSize.height : 0
             self.layoutIfNeeded()
 //            self.secondStackView.isHidden = !self.isExpanded
             self.tableView?.endUpdates()
