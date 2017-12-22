@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5F5845871FEA45C400F95B68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5845861FEA45C400F95B68 /* AppDelegate.swift */; };
-		5F5845891FEA45C400F95B68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5845881FEA45C400F95B68 /* ViewController.swift */; };
+		5F5845891FEA45C400F95B68 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5845881FEA45C400F95B68 /* MyTableViewController.swift */; };
 		5F58458C1FEA45C400F95B68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F58458A1FEA45C400F95B68 /* Main.storyboard */; };
 		5F58458E1FEA45C400F95B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F58458D1FEA45C400F95B68 /* Assets.xcassets */; };
 		5F5845911FEA45C400F95B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F58458F1FEA45C400F95B68 /* LaunchScreen.storyboard */; };
+		5F5845991FEA464A00F95B68 /* ExpandingCheckboxStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5845981FEA464A00F95B68 /* ExpandingCheckboxStackViewCell.xib */; };
+		5F58459B1FEA475100F95B68 /* ExpandingCheckboxStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58459A1FEA475100F95B68 /* ExpandingCheckboxStackViewCell.swift */; };
+		5F58459E1FEA615600F95B68 /* ExpandingCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58459D1FEA615600F95B68 /* ExpandingCheckboxCell.swift */; };
+		5F58459F1FEA639A00F95B68 /* ExpandingCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F58459C1FEA5F2F00F95B68 /* ExpandingCheckboxCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F5845831FEA45C400F95B68 /* TableViewCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5845861FEA45C400F95B68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F5845881FEA45C400F95B68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F5845881FEA45C400F95B68 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		5F58458B1FEA45C400F95B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F58458D1FEA45C400F95B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F5845901FEA45C400F95B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F5845921FEA45C400F95B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5845981FEA464A00F95B68 /* ExpandingCheckboxStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingCheckboxStackViewCell.xib; sourceTree = "<group>"; };
+		5F58459A1FEA475100F95B68 /* ExpandingCheckboxStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingCheckboxStackViewCell.swift; sourceTree = "<group>"; };
+		5F58459C1FEA5F2F00F95B68 /* ExpandingCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingCheckboxCell.xib; sourceTree = "<group>"; };
+		5F58459D1FEA615600F95B68 /* ExpandingCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingCheckboxCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				5F5845861FEA45C400F95B68 /* AppDelegate.swift */,
-				5F5845881FEA45C400F95B68 /* ViewController.swift */,
+				5F5845881FEA45C400F95B68 /* MyTableViewController.swift */,
 				5F58458A1FEA45C400F95B68 /* Main.storyboard */,
 				5F58458D1FEA45C400F95B68 /* Assets.xcassets */,
 				5F58458F1FEA45C400F95B68 /* LaunchScreen.storyboard */,
 				5F5845921FEA45C400F95B68 /* Info.plist */,
+				5F5845981FEA464A00F95B68 /* ExpandingCheckboxStackViewCell.xib */,
+				5F58459C1FEA5F2F00F95B68 /* ExpandingCheckboxCell.xib */,
+				5F58459D1FEA615600F95B68 /* ExpandingCheckboxCell.swift */,
+				5F58459A1FEA475100F95B68 /* ExpandingCheckboxStackViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -125,7 +137,9 @@
 			files = (
 				5F5845911FEA45C400F95B68 /* LaunchScreen.storyboard in Resources */,
 				5F58458E1FEA45C400F95B68 /* Assets.xcassets in Resources */,
+				5F58459F1FEA639A00F95B68 /* ExpandingCheckboxCell.xib in Resources */,
 				5F58458C1FEA45C400F95B68 /* Main.storyboard in Resources */,
+				5F5845991FEA464A00F95B68 /* ExpandingCheckboxStackViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F5845891FEA45C400F95B68 /* ViewController.swift in Sources */,
+				5F5845891FEA45C400F95B68 /* MyTableViewController.swift in Sources */,
 				5F5845871FEA45C400F95B68 /* AppDelegate.swift in Sources */,
+				5F58459E1FEA615600F95B68 /* ExpandingCheckboxCell.swift in Sources */,
+				5F58459B1FEA475100F95B68 /* ExpandingCheckboxStackViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
